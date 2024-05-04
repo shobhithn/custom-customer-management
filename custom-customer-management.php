@@ -6,6 +6,7 @@ Version: 1.0
 Author: SHOBHITH N
 */
 
+// plugin activation hook and create seperate table 
 register_activation_hook(__FILE__, 'custom_customer_management_activate');
 
 function custom_customer_management_activate()
@@ -37,3 +38,52 @@ function custom_customer_management_activate()
         dbDelta($sql);
     }
 }
+
+require_once (plugin_dir_path(__FILE__) . 'includes/add_customer.php');
+require_once (plugin_dir_path(__FILE__) . 'includes/view_customer.php');
+require_once (plugin_dir_path(__FILE__) . 'includes/edit_customer.php');
+require_once (plugin_dir_path(__FILE__) . 'includes/delete_customer.php');
+require_once (plugin_dir_path(__FILE__) . 'includes/list_customers.php');
+
+function custom_customer_records_page()
+{
+    if (!current_user_can('manage_options')) {
+        wp_die(__('You do not have sufficient permissions to access this page.'));
+    }
+
+    // Handle actions (add, edit, delete)
+    $action = isset($_GET['action']) ? $_GET['action'] : '';
+
+    switch ($action) {
+        case 'add':
+            custom_add_customer();
+            break;
+        case 'view':
+            custom_view_customer();
+            break;
+        case 'edit':
+            custom_edit_customer();
+            break;
+        case 'delete':
+            custom_delete_customer();
+            break;
+        default:
+            custom_list_customers();
+            break;
+    }
+}
+
+function custom_customer_menu()
+{
+    add_menu_page(
+        'Customer Records',
+        'Customer Records',
+        'manage_options',
+        'custom-customer-records',
+        'custom_customer_records_page',
+        'dashicons-businessman',
+        30
+    );
+}
+
+add_action('admin_menu', 'custom_customer_menu');
