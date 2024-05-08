@@ -1,0 +1,107 @@
+/*style for table */
+.wp-list-table th {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    position: relative;
+    cursor: pointer;
+}
+
+.wp-list-table th a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.wp-list-table th .sort-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    opacity: 0.4;
+}
+
+.wp-list-table th.sorted-asc .sort-icon {
+    border-bottom: 5px solid #555;
+    opacity: 1;
+}
+
+.wp-list-table th.sorted-desc .sort-icon {
+    border-top: 5px solid #555;
+    opacity: 1;
+}
+
+.page-numbers {
+    vertical-align: baseline;
+    min-width: 30px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.page-numbers.current {
+    color: #f0f0f1;
+    border-color: #2271b1;
+    background: #2271b1;
+}
+
+.search-box {
+    margin-bottom: 20px !important;
+}
+
+.title-and-btn {
+    display: flex;
+    align-items: center;
+}
+
+.title-and-btn a {
+    margin: 14px 0 0 10px !important;
+}
+
+.seach-result{
+    margin: 10px 10px 0 0;
+    padding-left: 25px;
+    color: #50575e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* style for form*/
+.customer-form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.customer-form label {
+    font-weight: bold;
+}
+
+.customer-form input[type="text"],
+.customer-form input[type="email"],
+.customer-form input[type="tel"],
+.customer-form input[type="date"],
+.customer-form select,
+.customer-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
