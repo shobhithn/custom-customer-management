@@ -70,7 +70,7 @@ function edit_customer()
             <input type="date" id="dob" name="dob" value="<?php echo $customer->dob; ?>" required><br>
 
             <label for="age">Age</label><br>
-            <input type="text" id="age" name="age" required><br>
+            <input type="text" id="age" name="age" readonly><br>
 
             <label for="gender">Gender:</label><br>
             <select id="gender" name="gender" required>
