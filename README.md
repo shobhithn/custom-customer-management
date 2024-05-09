@@ -27,13 +27,13 @@ information, with comprehensive administrative capabilities including adding, ed
 
 ## Importing Sample Data
 
-To import sample data into the plugin-created table ({prefix}_customers), follow these steps:
+To import sample data into the plugin-created table (`{prefix}_customers`), follow these steps:
 
 - Prepare the sample data file (`sample_customers_data.txt`) containing valid sample data for your plugin-created table ({prefix}_customers).
 
 - Access your WordPress database using a tool like phpMyAdmin or through your hosting control panel.
 
-- Locate the plugin-created table({prefix}_customers) where you want to import the data.
+- Locate the plugin-created table(`{prefix}_customers`) where you want to import the data.
 
 - Find the option to import data and select the `sample_customers_data.txt` file from your local computer.
 
@@ -50,3 +50,23 @@ To view active customers on your website, follow these steps:
    Example:
    ```plaintext
    [display_active_customers]
+
+## Screenshots
+
+- Active Customers Page
+   ![Active Customers](screenshots/Active_Customers.png)
+
+- Add New Customer Page
+   ![Add New Customer](screenshots/Add_New_Customer.png)
+
+- Customer Records Page
+   ![Customer Records](screenshots/Customer_Records.png)
+
+- Edit Customer Page
+   ![Edit Customer](screenshots/Edit_Customer.png)
+
+- Search Functionality
+   ![Search](screenshots/Search.png)
+
+- View Customer Page
+   ![View Customer](screenshots/View_Customer.png)
