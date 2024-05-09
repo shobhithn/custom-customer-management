@@ -7,7 +7,7 @@ information, with comprehensive administrative capabilities including adding, ed
 ## Requirements
 
 - PHP version 7.4 or greater.
-- MySQL version 8.0 or greater OR MariaDB version 10.4 or greater.
+- MySQL version 8.0 or greater.
 
 ## Installation
 ### Manual Installation
