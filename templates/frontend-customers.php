@@ -2,7 +2,7 @@
 <div class="frontend-customers">
     <h2>Active Customers</h2>
     <div class="search-form">
-        <input type="text" id="customer-search" placeholder="Search customers">
+        <input type="text" id="customer-search" placeholder="Search customers using name, email or phone number">
     </div>
     <table id="customer-table" class="wp-list-table widefat fixed striped customer-table">
         <thead>
