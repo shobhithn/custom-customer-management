@@ -53,26 +53,28 @@ To view active customers on your website, follow these steps:
 
 ## Screenshots
 
-- **Active Customers Page**
 
-   ![Active Customers](screenshots/Active_Customers.png)
-
-- **Add New Customer Page**
-
-   ![Add New Customer](screenshots/Add_New_Customer.png)
 
 - **Customer Records Page**
 
    ![Customer Records](screenshots/Customer_Records.png)
 
-- **Edit Customer Page**
+- **Add New Customer Page**
 
-   ![Edit Customer](screenshots/Edit_Customer.png)
-
-- **Search Functionality**
-
-   ![Search](screenshots/Search.png)
+   ![Add New Customer](screenshots/Add_New_Customer.png)
 
 - **View Customer Page**
 
    ![View Customer](screenshots/View_Customer.png)
+   
+- **Edit Customer Page**
+
+   ![Edit Customer](screenshots/Edit_Customer.png)
+
+- **Active Customers Page**
+
+   ![Active Customers](screenshots/Active_Customers.png)
+
+- **Search Functionality**
+
+   ![Search](screenshots/Search.png)
